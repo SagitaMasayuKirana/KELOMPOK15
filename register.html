@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPLearn - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        
+        .container-fluid {
+            box-shadow: 8px 8px 10px rgb(116, 115, 115);
+        }
+        .error-message {
+            color: red; /* Color for error messages */
+            font-size: 0.9em; /* Font size for error messages */
+        }
+        .input-group-text {
+        background-color: white; 
+        border: 1px solid #ced4da; 
+        }
+        .show-password-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;  
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 1.2em;
+        }
+
+        #eyeIcon {
+            color: #666; 
+        }
+    </style>
+</head>
+<body class="p-5" style="background-color: #D8D5D5;">
+    <header class="mb-4">
+       
+    </header>
+
+    <main>
+        <div class="container-fluid w-75 mt-lg-5 w-md-100 w-lg-100 mt-5 d-flex flex-column flex-lg-row bg-light p-3 rounded-5">
+            <div class="container-img w-50 d-md-none w-md-50 w-lg-50 mt-1 rounded p-3 d-none d-lg-block" style="background-color: #0E2F51;">
+                <img src="Assets/regis.png" alt="" class="img-fluid" style="margin-left: 120px; margin-top: 100px;">
+                <div>
+                    <br>
+                    <h2 class="text-center" style="color: white; font-weight: 700;">Welcome to RPLearn</h2> 
+                    <p class="text-center"  style="color: white;">To keep connected with us please login <br>with your personal info</p> 
+                
+                </div>
+            </div>
+            <div class="container-login w-lg-50 w-sm-100 w-md-100 p-5 col-lg-6 d-flex flex-column justify-content-center">
+                <h2 style="color: #0E2F51; font-weight: 700;">Create an Account</h2>
+                <p>Register your account</p>
+
+                <form action="login.html" method="post" class="row g-3">
+                    
+                    <div class="mb-3">
+                        <!-- <label for="nama" class="form-label">Nama</label> -->
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <input type="nama" name="nama" id="nama" class="form-control p-3" placeholder="Masukkan Nama Anda" required>
+                            <div id="nameError" class="error-message"></div>
+                        </div>
+                    </div>
+
+                    <!-- muli -->
+                    <div class="mb-2 position-relative">
+                        <!-- <label for="email" class="form-label">Email</label> -->
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <input type="email" name="email" id="email" class="form-control p-3" placeholder="Masukkan Email Anda" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 position-relative">
+                        <!-- <label for="password" class="form-label">Password</label> -->
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <input type="password" name="password" id="password" class="form-control p-3" placeholder="Masukkan Password Anda" required>
+                            <span id="togglePassword" class="show-password-icon position-absolute" style="right: 15px; top: 50%; transform: translateY(-50%);">
+                            </span>
+                        </div>
+                        <div id="passwordError" class="error-message"></div>
+                    </div>
+                    <!-- end -->
+                    
+                    
+                    
+                    <span class="d-flex justify-content-between flex-md-column flex-lg-row flex-sm-column">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck">
+                            <label class="form-check-label" for="rememberCheck">Remember Me</label>
+                        </div>
+                        <a href="">Forgot Password?</a>
+                    </span>
+                    <div class="mb-3">
+                        <input type="submit" value="Sign Up" class="btn btn-primary p-3 w-100 rounded" disabled>
+                    </div>
+                </form>
+
+                <p>Already have an account? <a href="login.html">Login Here</a></p>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 RPLearn.</p>
+    </footer>
+    <script src="script/regis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
